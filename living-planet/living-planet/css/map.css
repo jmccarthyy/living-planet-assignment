@@ -1,0 +1,148 @@
+@media only screen and (min-width: 0rem) {
+    .search-container {
+        text-align: center;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search-container h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    #city-input {
+        padding: 10px;
+        width: 200px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #city-input:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .map-content {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        padding: clamp(20px, 5%, 100px);
+    }
+
+    #city-info, #map-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #city-info h1 {
+        font-size: 2rem;
+    }
+
+    #map-info h1 {
+        font-size: 2rem;
+    }
+
+    .city-info-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        width: 100%;
+    }
+
+    .map-info-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .info-temp {
+        font-size: 3rem;
+    }
+
+    .info-temps {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 75%;
+        margin: 10px 0;
+    }
+
+    .google-container {
+        align-items: flex-start;
+        flex-direction: column;
+        height: 80vh;
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .google-map {
+        height: 100%;
+        width: 100% !important;
+    }
+
+    .google-directions {
+        width: 100%;
+        height: 100%;
+        overflow-x: auto;
+    }
+
+    .info-stat, .info-weather, .city-info-text {
+        font-size: 1.5rem;
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 50rem) {
+    .current-map {
+        height: 100vh;
+        width: 95vw;
+    }
+
+    .google-container {
+       flex-direction: row;
+    }
+
+    .google-map {
+        width: 70%;
+    }
+    
+    .google-directions {
+        width: 30%;
+    }
+
+    .info-stat, .info-weather {
+        font-size: 1rem;
+    }
+
+    .city-info-content {
+        width: 30vw;
+    }
+}
